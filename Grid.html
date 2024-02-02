@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .grid-container {
+            display: grid;
+            height: 500px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            gap:10px;
+
+            border: 1px solid black;
+            padding: 10px;
+
+
+
+
+
+
+
+
+        }
+
+        .grid-container div {
+            border: 1px solid black;
+            background-color: rgb(133, 216, 233);
+
+
+
+        }
+
+        .items1 {
+            grid-column: 1/span 4;
+
+
+
+
+        }
+
+        .items2 {
+            grid-row: 2/5;
+        }
+
+        .items3 {
+            grid-column: 2/5;
+        }
+
+        .items7 {
+            grid-column: 1/5;
+        }
+
+        .items4{
+            font-size: 10px;
+       
+          
+
+        }
+        .items4 p{
+            font-size: 1em;
+         
+           
+        }
+
+        .items4,
+        .items5,
+        .items6 {
+            grid-row: 3/5;
+        }
+
+        @media only screen and (min-width:0px )and (max-width: 900px) {
+          
+            .items4{
+            font-size: 5px;
+       
+          
+
+        }
+         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="items1">item1</div>
+        <div class="items2">item2</div>
+        <div class="items3">
+
+            
+            <a href="">Google</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni commodi temporibus maiores earum vitae
+                veniam, voluptatibus adipisci dicta ut in aspernatur, autem, quae quibusdam pariatur impedit placeat
+                eaque ipsum! Officia.</p>
+
+        </div>
+        <div class="items4"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat. Velit unde voluptas corporis odio voluptatibus voluptatem optio fuga, placeat magnam dolorum quia possimus obcaecati vitae sequi delectus tenetur quas?</p></div>
+        <div class="items5">item5</div>
+        <div class="items6">item6</div>
+        <div class="items7">item7</div>
+
+
+    </div>
+</body>
+
+</html>

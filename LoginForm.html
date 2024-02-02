@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .formcontainer{
+            height: 500px;
+            width: 100%;
+             display: flex;
+             
+            flex-direction: row;
+        }
+
+
+        .description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border:  solid rgb(238, 48, 48);
+            padding: 20px;
+            color:white;
+           
+           
+            background: linear-gradient(to bottom ,#dfe3f0, #949add,blue);
+           
+        }
+     
+        .description h1,p{
+            margin: 10px;
+        }
+       
+        .loginform{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           padding: 10px;
+
+            border:  solid blue;
+        }
+
+        @media screen and (max-width:800px) {
+            .formcontainer{
+                flex-direction: column;
+                
+
+            }
+            
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .loginform{
+            padding: 20px;
+
+        }
+        .loginform h1{
+            color: blue;
+        }
+        .loginform p{
+            color: rgb(215, 212, 212);
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 10px;
+            line-height: 1.5;
+            width: 80%;
+            margin: 20px;
+        }
+       
+        .loginform input{
+            border-style: none;
+            border-left: 5px solid blue;
+            margin:10px;
+            padding: 10px;
+        }
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="formcontainer">
+        <!-- Description -->
+        <div class="description">
+            <p>Nice to see you again</p>
+            <h1>Welcome Back</h1>
+            <hr style="border: 5px solid white; width: 30px;border-radius: 10px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor consequatur, officia sed excepturi nostrum sunt assumenda voluptatum iusto id quaerat, labore tenetur </p>
+
+        </div>
+
+
+        <!-- Login Form  -->
+
+        <div class="loginform">
+            <h1>Login Account</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus, eum incidunt suscipit aspernatur maiores facilis quasi voluptate nisi eligendi voluptatem eaque nobis tenetur earum labore optio nam alias perspiciatis?</p>
+
+            <form  action="" method=""  class="form-container">
+                <input type="text" placeholder="Email ID" >
+                <input type="text" placeholder="Password">
+
+                <input type="checkbox">
+                <p>Already a member?</p>
+                <button type="submit">SUBSCRIBE</button>
+
+                 
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>

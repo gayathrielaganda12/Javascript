@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .remclass{
+            font-size:3rem ;
+            border: 1px solid black;
+        }
+        .emclass{
+            font-size: 3em;
+            border: 1px solid black;
+        }
+        .container{
+            font-size: 4px;
+        }
+
+       .vhvwclass{
+        height: 50vh;
+        width: 50vw;
+        border: 1px solid black;
+        background-color: yellow;
+       }
+       .percentageclass{
+        border: 1px solid black;
+        width: 50%;
+       }
+    </style>
+</head>
+<body>
+    <!-- px , % , em , rem , vh, vw -->
+    <!-- pixels is for fixed size-->
+  <div >
+    <div class="container" >
+        <h1 class="emclass">em</h1>
+        <h1 class="remclass">rem</h1>
+    </div>
+
+    <!-- Vh height and vh wid -->
+
+ <div  style="border: 1px solid black; width: 500px; ">
+
+    <div class="vhvwclass">
+        <h1>viewport heigh </h1>
+        <h1>viewport width</h1>
+    
+       
+    </div>
+  
+ </div>
+
+
+<div style=" border: 1px solid black;width: 600px;">
+    <div class="percentageclass">
+        <h1>50% of parent</h1>
+
+    </div>
+ </div>
+
+
+
+  </div>
+</body>
+</html>
